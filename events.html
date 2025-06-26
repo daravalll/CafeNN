@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сладкие строчки - Мероприятия</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.png" alt="Логотип" width="48" height="48" class="me-2" style="border-radius: 50%; object-fit: cover;">
+                <span>Сладкие строчки</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="events.html">Мероприятия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promotions.html">Акции</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center display-3 mb-4" style="font-family: 'Times New Roman', Times, serif; color: var(--accent-color);">Мероприятия</h1>
+        
+        <p class="lead text-center mb-5">
+            "Сладкие строчки" — это не только кафе, но и культурное пространство. Мы регулярно проводим литературные вечера, встречи с писателями и творческие мастер-классы для всех желающих.
+        </p>
+
+        <!-- Events Cards -->
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/event-photo-1.jpg" class="card-img-top" alt="Фото с литературного вечера">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Литературные вечера</h5>
+                        <p class="card-text">Каждую среду мы приглашаем вас на уютные вечера, посвященные классической и современной литературе. Читаем вслух, обсуждаем, наслаждаемся поэзией и прозой в компании единомышленников.</p>
+                        <button class="btn mt-auto btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Записаться</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/event-photo-2.jpg" class="card-img-top" alt="Фото с мастер-класса">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Мастер-класс "Сладкий профессионал"</h5>
+                        <p class="card-text">По субботам наши кондитеры делятся своими секретами. Научитесь готовить наши фирменные десерты и удивите своих близких! Все материалы предоставляются.</p>
+                        <button class="btn mt-auto btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Запись на мероприятие</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" placeholder="Иван Иванов">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                         <div class="mb-3">
+                            <label for="event-select" class="form-label">Выберите мероприятие</label>
+                            <select class="form-select" id="event-select">
+                                <option selected>Выберите...</option>
+                                <option value="1">Литературный вечер</option>
+                                <option value="2">Мастер-класс "Сладкий профессионал"</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <div class="text-center p-3">
+            © 2024 Сладкие строчки
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html> 

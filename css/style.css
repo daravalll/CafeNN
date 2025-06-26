@@ -1,0 +1,33 @@
+/* Custom styles for Sladkie Strochki */
+
+body {
+    background-color: #fae8e0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #fff !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #ef7c8e !important;
+}
+
+.nav-link {
+    color: #333 !important;
+}
+
+.nav-link.active {
+    color: #ef7c8e !important;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #fff;
+    color: #333;
+} 
